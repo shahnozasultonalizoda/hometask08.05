@@ -1,5 +1,6 @@
 using Domain.Models;
 using Infrastructure;
+using Infrastructure.Dtos;
 using Microsoft.AspNetCore.Mvc;
 
 namespace WebApi.Controllers;
@@ -41,4 +42,10 @@ public class CompanyController
         return await companyService.DeleteCompanyAsync(id);
     }
 
+
+    [HttpGet ("with-order-count")]
+    public async Task<List<GetCompaniesWithOrderCountDto>> GetCompaniesWithOrderCountAsync()
+    {
+        return await companyService.GetCompaniesWithOrderCountAsync();
+    }
 }

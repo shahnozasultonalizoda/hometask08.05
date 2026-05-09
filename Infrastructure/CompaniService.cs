@@ -1,6 +1,7 @@
 using Dapper;
 using Domain.Models;
 using Infrastructure.Data;
+using Infrastructure.Dtos;
 
 namespace Infrastructure;
 
@@ -54,6 +55,20 @@ public class CompaniService : ICompanyService
         var res = await connection.QueryAsync<Company>(sql);
         return res.ToList();
     }
+
+    public async Task<List<GetCompaniesWithOrderCountDto>> GetCompaniesWithOrderCountAsync()
+    {
+        using var connection = context.GetConnection();
+        connection.Open();
+
+        var sql = @"select c.id as CompanyId , c.Name as CompanyName , Count(o.id) as OrderCount from companies c
+                    join orders o on o.id = o.CompanyId
+                    group by  c.id , c.name";
+
+        var res = await connection.QueryAsync<GetCompaniesWithOrderCountDto>(sql);
+        return res.ToList();
+    }
+
 
     public async Task<Company?> GetCompanyByIdAsync(int id)
     {

@@ -51,7 +51,7 @@ public class MenuItemsService : IMenuItemsService
         using var connection = context.GetConnection();
         connection.Open();
 
-        var checkId = "select * from menuitems where id = @id";
+        var checkId = "select * from menuitems where id = @Id";
         var menuitem =await connection.QueryFirstOrDefaultAsync(checkId , new{Id = id});
         if(menuitem == null)
         {
@@ -78,7 +78,7 @@ public class MenuItemsService : IMenuItemsService
         connection.Open();
 
         var checkId = "select * from menuitems where id = @id";
-        var exists =await connection.QueryFirstOrDefaultAsync(checkId , new{Id = id});
+        var exists =await connection.QueryFirstOrDefaultAsync(checkId , new{Id = menuItem.Id});
         if(exists == null)
         {
             System.Console.WriteLine("netu");
