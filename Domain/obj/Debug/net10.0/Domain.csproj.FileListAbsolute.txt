@@ -1,0 +1,12 @@
+D:\.Net2 May\W1-Day3\Yalla\Domain\bin\Debug\net10.0\Domain.deps.json
+D:\.Net2 May\W1-Day3\Yalla\Domain\bin\Debug\net10.0\Domain.dll
+D:\.Net2 May\W1-Day3\Yalla\Domain\bin\Debug\net10.0\Domain.pdb
+D:\.Net2 May\W1-Day3\Yalla\Domain\obj\Debug\net10.0\Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\.Net2 May\W1-Day3\Yalla\Domain\obj\Debug\net10.0\Domain.AssemblyInfoInputs.cache
+D:\.Net2 May\W1-Day3\Yalla\Domain\obj\Debug\net10.0\Domain.AssemblyInfo.cs
+D:\.Net2 May\W1-Day3\Yalla\Domain\obj\Debug\net10.0\Domain.csproj.CoreCompileInputs.cache
+D:\.Net2 May\W1-Day3\Yalla\Domain\obj\Debug\net10.0\Domain.sourcelink.json
+D:\.Net2 May\W1-Day3\Yalla\Domain\obj\Debug\net10.0\Domain.dll
+D:\.Net2 May\W1-Day3\Yalla\Domain\obj\Debug\net10.0\refint\Domain.dll
+D:\.Net2 May\W1-Day3\Yalla\Domain\obj\Debug\net10.0\Domain.pdb
+D:\.Net2 May\W1-Day3\Yalla\Domain\obj\Debug\net10.0\ref\Domain.dll
